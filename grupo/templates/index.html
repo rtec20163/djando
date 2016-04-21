@@ -1,0 +1,17 @@
+
+	<h1>Bienvenido</h1>
+
+	{% if contenido %}
+
+	<ul>
+		{% for q in contenido %}
+		<li>{{q.nombre}} - Genero:
+			{% for g in q.genero.all%}
+			{{g.nombre}}
+			{%endfor%}
+		</li>
+		{% endfor %}		
+	</ul>
+	{% else %}
+	<p>Aun no hay registros de grupos</p>
+	{% endif %}
