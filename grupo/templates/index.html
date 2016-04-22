@@ -1,7 +1,10 @@
 
 	<h1>Bienvenido</h1>
+<div style="width:100%">
 
-	{% if contenido %}
+	<div style="width:70%;float:left;">
+		<h2>Grupos Registrados</h2>
+		{% if contenido %}
 
 	<ul>
 		{% for q in contenido %}
@@ -15,3 +18,10 @@
 	{% else %}
 	<p>Aun no hay registros de grupos</p>
 	{% endif %}
+	</div>
+
+	<div style="float:left;">
+		<h2>Ultimos Posts</h2>	
+	</div>
+</div>
+	
