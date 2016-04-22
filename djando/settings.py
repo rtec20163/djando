@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'grupo.apps.GrupoConfig',
+    'blog'
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -78,9 +79,9 @@ WSGI_APPLICATION = 'djando.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'testdb',
-        'USER': 'testuser',
-        'PASSWORD': 'inseguro',
+        'NAME': 'musica',
+        'USER': 'postgres',
+        'PASSWORD': '-Koubeck010',
         'HOST': 'localhost',
         'PORT': '',
     }
